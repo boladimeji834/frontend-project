@@ -27,7 +27,7 @@ export default function Response(props: IChatComponentProp) {
             borderRadius: '25px 25px 25px 0px',
             background: '#eee'
         }}>
-            <p className='text-sm font-bold text-grey' style={{
+            <p className='text-base font-medium text-grey' style={{
                 fontFamily: 'nunito'
             }}>
                 {props.text}

@@ -29,8 +29,7 @@ body {
 }
 
 .mobile {
-  width: 375px;
-  min-height: 812px;
-  border-radius: 40px;
+  width: 100vw;
+  max-width: 420px;
   position: relative;
 }

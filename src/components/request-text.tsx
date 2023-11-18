@@ -9,7 +9,7 @@ export default function Request(props: IChatComponentProp) {
       minWidth: 54,
       borderRadius: '25px 0px 25px 25px'
     }}>
-      <p className='text-sm font-bold text-light' style={{
+      <p className='text-base font-medium text-light' style={{
         fontFamily: 'nunito'
       }}>
         {props.text}

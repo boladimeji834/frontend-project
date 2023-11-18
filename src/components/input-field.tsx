@@ -3,8 +3,11 @@ import Image from 'next/image'
 import mic from '@/assets/microphone-2.png'
 import send from '@/assets/send.png'
 import 'typeface-nunito'
+import { useDispatch, useSelector } from 'react-redux'
+import { setChatState } from '@/store/chatReducer'
 
 export default function Input() {
+  const dispatch = useDispatch()
   return (
     <div className='w-full px-6' style={{
         height: 56,
