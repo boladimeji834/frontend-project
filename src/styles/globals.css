@@ -33,7 +33,7 @@ body {
 .mobile {
   width: 100vw;
   min-height: 700px;
-  height: 100vh;
+  height: 'fit-content';
   max-height: fit-content;
   max-width: 420px;
   position: relative;
