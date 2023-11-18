@@ -13,3 +13,18 @@ export interface IChatTemplateData {
 export interface IChatComponentProp {
     text: string
 }
+
+export interface IChatObject {
+    chatCategory: 1 | 2,
+    content: string
+}
+
+export interface IChat {
+    conversationInitiated: boolean
+    chat: IChatObject[]
+    screenLevel: number
+}
+
+export interface IState {
+    chat: IChat
+}

@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { setChatState } from '@/store/chatReducer'
 import Gpt from '@/assets/blue-robot-mascot-logo-icon-design_675467-55 1 (Traced) (1).svg'
 import 'typeface-nunito'
-import active from '@/assets/active.png'
+import active from '@/assets/active.svg'
 import volume from '@/assets/volume-high.svg'
 import exp from '@/assets/export.svg'
 

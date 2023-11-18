@@ -1,15 +1,27 @@
 import React from 'react'
 import Request from './request-text'
 import Response from './response-text'
+import { useSelector } from 'react-redux'
+import { IState } from '@/data/data'
 
 export default function Conversation() {
+  const chats = useSelector((state: IState) => state.chat)
+  console.log(chats)
   return (
-    <div className='flex flex-col text-grey px-7 pt-6 pb-24 gap-4' style={{ minHeight: '100vh'}}>
-      <Request text='Hello ChatGPT, how are you doing today?' />
-      <Response text='Hi, how can I help you?' />
-      <Request text='What is the best programming language?' />
-      <Response text='There are many programming languages in the market that are used in designing and building websites, various applications and other tasks. All these languages are popular in their place and in the way they are used, and many programmers learn and use them.' />
-      <Request text='Okay, thank you' />
+    <div className='flex flex-col text-grey px-7 pt-6 pb-28 gap-4' style={{ minHeight: '100vh'}}>
+      {
+        chats.chat.map(({ chatCategory, content }) => {
+          if (chatCategory === 1) {
+            return (
+              <Request key={content} text={content} />
+            ) 
+          } else if (chatCategory === 2) {
+            return (
+              <Response key={content} text={content} />
+            )
+          }
+        })
+      }
     </div>
   )
 }
