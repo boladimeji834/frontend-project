@@ -17,7 +17,7 @@ export default function ChatHeader() {
   return (
     <div className='flex items-end pt-4 pb-3.5 px-7 border-b border-ash'>
       <div className='flex justify-between w-full items-center' style={{
-        height: 51
+        height: '3.125rem'
       }}>
         <div className='flex h-full items-center' style={{
             gap: 17
