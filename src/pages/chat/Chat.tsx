@@ -12,8 +12,8 @@ export default function Chat() {
   console.log(chatState)
   // console.log(res)
   return (
-    <main className="h-screen flex justify-center items-center p-md-5 my-md-16">
-      <div className='mobile md:rounded-3xl h-screen bg-light'>
+    <main className="flex justify-center items-center p-md-5 my-md-16" style={{ height: 'fit-content'}}>
+      <div className='mobile md:rounded-3xl bg-light' style={{ }}>
         <ChatHeader />
           { chatState.conversationInitiated ? <Conversation /> : <ChatTemplate /> }
         <Input />

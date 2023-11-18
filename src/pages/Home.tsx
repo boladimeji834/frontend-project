@@ -11,7 +11,7 @@ export default function Home() {
     setTimeout(() => setOnboarding(false), 5000)
   }, [])
   return (
-    <main className="h-screen flex justify-center items-center p-5 my-16">
+    <main className="flex justify-center items-center p-md-5 my-md-16" style={{ height: 'fit-content'}}>
       <Onboarding show={onBoarding} />
     </main>
   )
