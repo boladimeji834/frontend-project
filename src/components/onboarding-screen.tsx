@@ -67,7 +67,7 @@ export default function Onboarding({ show }: props) {
                     fontFamily: 'nunito',
                     transition: 'all 0.5s ease-out'
                 }}>
-                    <i></i>
+                    <i className="bi bi-arrow-right text-primary text-xl"></i>
 
                     Continue
 

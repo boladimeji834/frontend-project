@@ -16,7 +16,7 @@ export default function Input() {
         transform: 'translateX(-50%)',
         left: '50%',
     }}>
-      <div className='h-full flex justify-between items-center' style={{
+      <div className='h-full bg-light flex justify-between items-center' style={{
         boxShadow: '5px 4px 20px 0px rgba(0, 0, 0, 0.13)',
         borderRadius: 30
       }}>

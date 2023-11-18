@@ -6,7 +6,9 @@ import { IChatTemplate } from "@/data/data"
 
 export default function ChatTemplate() {
   return (
-    <div className="flex flex-col text-grey px-6 pt-6 pb-24 gap-9">
+    <div className="flex flex-col text-grey px-6 pt-6 pb-24 gap-9" style={{
+      height: 'fit-content'
+    }}>
       {
         templateData.map((each) => {
           return (
