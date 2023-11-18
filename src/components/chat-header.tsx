@@ -30,17 +30,16 @@ export default function ChatHeader() {
             </button>
             <Image src={Gpt} width={24} alt='chat-gpt' />
             <div className='flex flex-col'>
-                <h4 className='text-xl text-primary font-bold' style={{
+                <h4 className='text-l text-primary font-bold' style={{
                     fontFamily: 'nunito',
                     lineHeight: 'normal'
                 }}>
                     ChatGPT
                 </h4>
 
-                <h4 className='text-success flex items-center font-medium' style={{
+                <h4 className='text-success text-base flex items-center font-medium' style={{
                     fontFamily: 'nunito',
                     lineHeight: 'normal',
-                    fontSize: 17,
                     gap: 5
                 }}>
                     <Image alt='active' src={active} />
