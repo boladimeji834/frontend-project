@@ -9,3 +9,7 @@ export interface IChatTemplateData {
     segmentTitle: string,
     templates: IChatTemplate[]
 }
+
+export interface IChatComponentProp {
+    text: string
+}

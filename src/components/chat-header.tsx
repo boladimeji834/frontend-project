@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Gpt from '@/assets/blue-robot-mascot-logo-icon-design_675467-55 1 (Traced).png'
+import Gpt from '@/assets/blue-robot-mascot-logo-icon-design_675467-55 1 (Traced) (1).svg'
 import 'typeface-nunito'
 import active from '@/assets/active.png'
 import volume from '@/assets/volume-high.svg'
@@ -22,7 +22,7 @@ export default function ChatHeader() {
                     lineHeight: 0
                 }}></i>
             </button>
-            <Image src={Gpt} alt='chat-gpt' />
+            <Image src={Gpt} width={24} alt='chat-gpt' />
             <div className='flex flex-col'>
                 <h4 className='text-xl text-primary font-bold' style={{
                     fontFamily: 'nunito',

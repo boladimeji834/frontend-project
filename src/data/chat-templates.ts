@@ -1,4 +1,4 @@
-import { IChatTemplateData } from "./chat-template";
+import { IChatTemplateData } from "./";
 import explain from '@/assets/explain.svg'
 import edit from '@/assets/edit-2.svg'
 import translate from '@/assets/translate.svg'

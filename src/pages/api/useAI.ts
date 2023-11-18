@@ -6,13 +6,13 @@ export default function useAI() {
 
     useEffect(() => {
         axios.post('https://api.openai.com/v1/chat/completions', {
-            "model": "gpt-3.5-turbo-1106",
-            "messages": [{"role": "user", "content": "Say this is a test!"}],
-            "temperature": 0.7
+            'model': 'gpt-3.5-turbo-1106',
+            'messages': [{'role': 'user', 'content': 'Say this is a test!'}],
+            'temperature': 0.7
         }, {
             headers: {
-            'Content-Type': "application/json",
-            'Authorization': "Bearer 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"
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + process.env.NEXT_PUBLIC_AUTHORIZATION_KEY
             }
         })
         .then((e) => setResponse(e.data))
