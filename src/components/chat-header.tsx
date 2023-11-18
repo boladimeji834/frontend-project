@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { setChatState } from '@/store/chatReducer'
 import Gpt from '@/assets/blue-robot-mascot-logo-icon-design_675467-55 1 (Traced) (1).svg'
 import 'typeface-nunito'
@@ -22,12 +22,12 @@ export default function ChatHeader() {
         <div className='flex h-full items-center' style={{
             gap: 17
         }}>
-            <button onClick={() => handleNav()}>
+            <i className='cursor-pointer' onClick={() => handleNav()}>
                 <i className='bi bi-arrow-left text-2xl' style={{
                     color: '#292D32',
                     lineHeight: 0
                 }}></i>
-            </button>
+            </i>
             <Image src={Gpt} width={24} alt='chat-gpt' />
             <div className='flex flex-col'>
                 <h4 className='text-l text-primary font-bold' style={{

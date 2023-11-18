@@ -29,7 +29,7 @@ export default function Onboarding({ show }: props) {
             }} />
         </div>
 
-        <div className='mobile bg-light flex flex-col items-center justify-between' style={{ 
+        <div className='mobile bg-light h-screen flex flex-col items-center justify-between' style={{ 
             display: visibility ? 'none' : 'flex',
             padding: '34px 28px',
             fontFamily: 'nunito !important'

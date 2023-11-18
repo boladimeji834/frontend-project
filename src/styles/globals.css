@@ -38,3 +38,9 @@ body {
   max-width: 420px;
   position: relative;
 }
+
+.icon-button:focus-visible {
+  outline: none !important;
+  background: transparent !important;
+  box-shadow: none;
+}

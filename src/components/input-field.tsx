@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import mic from '@/assets/microphone-2.png'
-import send from '@/assets/send.png'
+import send from '@/assets/send-1.svg'
 import 'typeface-nunito'
 import { useDispatch, useSelector } from 'react-redux'
 import { setChatState } from '@/store/chatReducer'
@@ -28,17 +28,11 @@ export default function Input() {
         <div className='flex px-3.5' style={{
             gap: 7
         }}>
-            <button>
-                <Image alt='mic' src={mic} style={{
-                    width: '28px'
-                }} />
-            </button>
-
-            <button>
+            <i className='icon-button cursor-pointer'>
                 <Image alt='send' src={send} style={{
-                    width: '28px'
+                    width: '1.5rem'
                 }} />
-            </button>
+            </i>
         </div>
       </div>
     </div>

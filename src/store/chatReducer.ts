@@ -4,7 +4,8 @@ const chatSlice = createSlice({
     name: 'chat',
     initialState: {
         conversationInitiated: false,
-        chat: []
+        chat: [],
+        screenLevel: 1
     },
     reducers: {
         setChatState: (state, action) => {
