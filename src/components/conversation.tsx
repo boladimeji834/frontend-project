@@ -8,7 +8,7 @@ export default function Conversation() {
   const chats = useSelector((state: IState) => state.chat)
   console.log(chats)
   return (
-    <div className='flex flex-col text-grey px-7 pt-6 pb-28 gap-4' style={{ minHeight: '100vh'}}>
+    <div className='flex flex-col text-grey px-7 pt-6 pb-32 gap-4' style={{ minHeight: '100vh'}}>
       {
         chats.chat.map(({ chatCategory, content }) => {
           if (chatCategory === 1) {

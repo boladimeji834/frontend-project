@@ -18,7 +18,7 @@ export default function ChatAtom({ text }: prop) {
 
   const defResponse: IChatObject = {
     chatCategory: 2,
-    content: `Hi, I can't repond at the moment as I am still under development.. \r\n Sorry for any inconviniencies caused.`
+    content: `Hello! Thank you for reaching out. I'm currently under development and not able to provide responses at the moment. Your patience is appreciated, and I'll be back to assist you as soon as possible. If you have any urgent questions, please feel free to reach out later. Thank you for your understanding!`
   }
 
   const initateConversation = () => {

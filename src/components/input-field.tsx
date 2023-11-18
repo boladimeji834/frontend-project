@@ -21,7 +21,7 @@ export default function Input() {
 
     const defResponse: IChatObject = {
       chatCategory: 2,
-      content: `Sorry, I can't respond now, I'm still under development.. \r\n Sorry for any inconviniencies caused.`
+      content: `Hello! I appreciate your message. Currently, I'm undergoing development and can't respond in real-time. Your inquiry is important, and I'll get back to you as soon as I'm fully operational. If you have immediate concerns, please check back later. Thank you for your understanding and patience!`
     }
 
     dispatch(setChat([...chats, newChat, defResponse ]))
@@ -48,7 +48,7 @@ export default function Input() {
         <div className='flex px-3.5' style={{
             gap: 7
         }}>
-            <i onClick={() => sendChat(text)} className='icon-button cursor-pointer'>
+            <i onClick={() => text.length > 0 ? sendChat(text) : null } className='icon-button cursor-pointer'>
                 <Image alt='send' src={send} style={{
                     width: '1.5rem'
                 }} />
