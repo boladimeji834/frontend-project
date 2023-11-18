@@ -15,7 +15,7 @@ export default function ChatHeader() {
         dispatch(setChatState(false))
     }
   return (
-    <div className='h-24 flex items-end pb-3.5 px-7 border-b border-ash'>
+    <div className='flex items-end pt-4 pb-3.5 px-7 border-b border-ash'>
       <div className='flex justify-between w-full items-center' style={{
         height: 51
       }}>
@@ -23,9 +23,8 @@ export default function ChatHeader() {
             gap: 17
         }}>
             <button onClick={() => handleNav()}>
-                <i className='bi bi-arrow-left' style={{
+                <i className='bi bi-arrow-left text-2xl' style={{
                     color: '#292D32',
-                    fontSize: 24,
                     lineHeight: 0
                 }}></i>
             </button>
