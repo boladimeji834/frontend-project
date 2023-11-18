@@ -19,12 +19,14 @@ export default function Onboarding({ show }: props) {
     }, [show])
   return (
     <>
-        <div className='mobile bg-primary flex items-center justify-center' style={{ 
+        <div className='mobile h-screen bg-primary flex items-center justify-center' style={{ 
             transition: 'all 0.7s ease-out', 
             display: visibility ? 'flex' : 'none',
             opacity: show ? 1 : 0
         }}>
-            <Image src={onboardingImg} alt='onboarding' />
+            <Image src={onboardingImg} className='w-9/12' alt='onboarding' style={{
+                width: '200px !important'
+            }} />
         </div>
 
         <div className='mobile bg-light flex flex-col items-center justify-between' style={{ 
@@ -32,7 +34,7 @@ export default function Onboarding({ show }: props) {
             padding: '34px 28px',
             fontFamily: 'nunito !important'
         }}>
-            <div className='flex flex-col gap-3.5'>
+            <div className='flex flex-col gap-1.5'>
                 <h4 className='text-primary fw-bold text-2xl font-bold' style={{ 
                     fontFamily: 'nunito',
                     lineHeight: 'normal',
@@ -46,18 +48,21 @@ export default function Onboarding({ show }: props) {
                 <p className='text-grey text-base font-medium' style={{
                     fontFamily: 'nunito',
                     textAlign: 'center',
-                    lineHeight: 'normal'
+                    lineHeight: 'normal',
+                    maxWidth: 240
                 }}>
-                    Using this software, you can ask your <br />
-                    questions and receive articles using <br />
+                    Using this software, you can ask your
+                    questions and receive articles using
                     artificial intelligence assistant
                 </p>
             </div>
 
-            <Image alt='onboarding2' src={onboardingImg1} />
+            <Image width={250} alt='onboarding2' src={onboardingImg1} style={{
+                width: '300px !important'
+            }} />
 
             <Link href={'/chat'} className='w-full'>
-                <button className='bg-primary flex justify-between p-5 items-center h-14 w-full font-bold text-lg hover:opacity-80' style={{
+                <button className='bg-primary flex justify-between p-5 items-center h-14 w-full font-semibold text-base hover:opacity-80' style={{
                     borderRadius: 30,
                     fontFamily: 'nunito',
                     transition: 'all 0.5s ease-out'
@@ -66,7 +71,7 @@ export default function Onboarding({ show }: props) {
 
                     Continue
 
-                    <i className="bi bi-arrow-right text-light text-2xl"></i>
+                    <i className="bi bi-arrow-right text-light text-xl"></i>
                 </button>
             </Link>
         </div>
